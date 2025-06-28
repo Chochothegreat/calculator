@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Emmanuel's <br> Age Calculator </h2>
+      <form id="ageForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <div class="date-inputs">
+          <input
+            type="number"
+            id="day"
+            placeholder="DD"
+            min="1"
+            max="31"
+            required
+          />
+          <input
+            type="number"
+            id="month"
+            placeholder="MM"
+            min="1"
+            max="12"
+            required
+          />
+          <input type="number" id="year" placeholder="YYYY" required />
+        </div>
+        <button type="submit" id="calculateBtn">➤</button>
+      </form>
+      <div id="result">
+        <p><strong>Name:</strong> <span id="displayName">--</span></p>
+        <p><span id="years">--</span> years</p>
+        <p><span id="months">--</span> months</p>
+        <p><span id="days">--</span> days</p>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
